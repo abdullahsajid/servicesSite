@@ -306,6 +306,51 @@ input::-webkit-datetime-edit {
     font-weight: 700;
     color: #2F0A32;
 }
+.form-check-input:checked {
+    background-color: #1DC9A0;
+    border-color: #1DC9A0;
+}
+.login-btn{
+    width: 170px;
+    float: right;
+}
+.summary-card-login{
+    margin-top: -730px;
+}
+.summary-card-register{
+    margin-top: -590px;
+}
+.open-box{
+    position: relative;
+    top: -28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close-box{
+    position: relative;
+    top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.model-open{
+    display: none;
+}
+.show-box-content {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0rem !important;
+}
+.mr-remove{
+    margin-bottom: 0 !important;
+}
+.vanilla-calendar-grid{
+    display: flex !important;
+}
 @media screen and (max-width:450px) {
     .sel-comp{
         width: 100%;
@@ -422,4 +467,90 @@ input::-webkit-datetime-edit {
         padding: 3px;
         font-size: 10px;
     }
+    .count{
+        padding: 11px;
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+    .resp-align{
+        align-items: center;
+    }
+    .selected-value{
+        font-size: 15px;
+    }
+    .transfer-field{
+        padding:13px;
+    }
+    .resp-input-mr{
+        margin: 2rem 0 !important;
+    }
+    .check-head{
+        font-size: 15px;
+    }
+    .second-check{
+        font-size: 11px;
+    }
+    .resp-svg-transfer{
+        width: 40px;
+        height: 40px;
+    }
+    .Comment-field {
+        width: 100% !important;
+        padding: 10px;
+    }
+    .resp-pass-btn{
+        font-size: 11px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    .resp-pass-label{
+        font-size: 15px !important;
+    }
+    .resp-privacy-label{
+        font-size: 11px !important;
+    }
+    .resp-payment-details{
+        font-size: 13px;
+    }
+    .resp-location-icon{
+        width: 25px;
+        height: 25px;
+    }
+    .icon-indicator{
+        margin-left: 12px !important;
+    }
+    .resp-ms-0{
+        margin-left: 0 !important;
+    }
+    .total-heading{
+        font-size: 27px;
+    }
+    .summary-card{
+        margin-top: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .resp-card-rev{
+        flex-direction: column-reverse;
+    }
+    .login-btn{
+        width: 100%;
+        float: none;
+    }
+    .summary-card-login,.summary-card-register{
+        margin-top: 0 !important;
+    }
+    .resp-model-show{
+        display: none;
+    }
+    .model-open{
+        display: block;
+    }
+    .resp-set-tab-booking-width{
+        width: 100% !important;
+    }
+    .vanilla-calendar-column:nth-child(2) {
+        display: none;
+      }
 }
