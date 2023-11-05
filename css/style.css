@@ -340,16 +340,37 @@ input::-webkit-datetime-edit {
 }
 .show-box-content {
     display: block !important;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: fixed !important;
+    top: 50%;
+    left: 50%;
     margin-top: 0rem !important;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    transition: transform 0.15s ease-in;
 }
 .mr-remove{
     margin-bottom: 0 !important;
 }
 .vanilla-calendar-grid{
     display: flex !important;
+}
+.body-model-open{
+    position: fixed;
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(156, 155, 155, 0.6);
+    overflow-y: hidden;
+    z-index: 99;
+    transition: opacity 0.15s linear;
+}
+.model-open-mt{
+    margin-top: -38px;
+}
+.resp-model-open-opacity{
+    opacity: .5;
 }
 @media screen and (max-width:450px) {
     .sel-comp{
@@ -498,6 +519,7 @@ input::-webkit-datetime-edit {
     .Comment-field {
         width: 100% !important;
         padding: 10px;
+        font-size: 12px;
     }
     .resp-pass-btn{
         font-size: 11px;
@@ -552,5 +574,11 @@ input::-webkit-datetime-edit {
     }
     .vanilla-calendar-column:nth-child(2) {
         display: none;
-      }
+    }
+    .sm-pe-0{
+        padding-right: 0;
+    }
+    .resp-comment-area-pd{
+        padding-right: 18px;
+    }
 }
